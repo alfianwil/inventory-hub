@@ -1,0 +1,75 @@
+:root {
+    --primary-gradient: linear-gradient(135deg, #6366f1 0%, #4f46e5 100%);
+    --glass-bg: #ffffff;
+    --input-bg: #f8fafc;
+}
+
+body {
+    background-color: #f1f5f9;
+    font-family: 'Inter', sans-serif;
+    color: #1e293b;
+}
+
+.glass-card {
+    background: var(--glass-bg);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05);
+}
+
+.modern-input {
+    background-color: var(--input-bg);
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 12px;
+}
+
+.modern-input:focus {
+    background-color: #fff;
+    box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.1);
+    border-color: #6366f1;
+}
+
+.search-group {
+    background: var(--input-bg);
+    border-radius: 12px;
+    padding-left: 10px;
+}
+
+.btn-primary {
+    background: var(--primary-gradient);
+    border: none;
+    border-radius: 12px;
+    transition: transform 0.2s ease;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(79, 70, 229, 0.3);
+}
+
+.stats-pill {
+    background: #fff;
+    padding: 8px 20px;
+    border-radius: 50px;
+    font-weight: 600;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+}
+
+.badge-custom {
+    padding: 6px 12px;
+    border-radius: 8px;
+    font-size: 0.75rem;
+    font-weight: 700;
+}
+
+/* Row animations */
+tr {
+    transition: all 0.3s ease;
+    border-radius: 12px;
+}
+
+tr:hover {
+    background-color: #f8fafc;
+    transform: scale(1.01);
+}
